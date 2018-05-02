@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="139px" height="46px" viewBox="0 0 139 46" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>Measure</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Measure" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <text id="inspect" font-family="ArialRoundedMTBold, Arial Rounded MT Bold" font-size="14" font-weight="normal" fill="#4A4A4A">
+            <tspan x="67.9086914" y="27">inspect</tspan>
+        </text>
+        <g id="Chat" transform="translate(11.000000, 11.000000)" fill="#4A4A4A" fill-rule="nonzero">
+            <g id="chat-information-talk-discussion">
+                <path d="M0,1 L1.55431223e-15,17.9393939 C1.62194761e-15,18.4916787 0.44771525,18.9393939 1,18.9393939 L8,18.9393939 L11.6971189,23.9186787 C12.0263575,24.3620976 12.6527202,24.4546591 13.0961392,24.1254205 C13.1748098,24.0670076 13.2444682,23.9973493 13.3028811,23.9186787 L17,18.9393939 L24,18.9393939 C24.5522847,18.9393939 25,18.4916787 25,17.9393939 L25,1 C25,0.44771525 24.5522847,1.86065652e-15 24,0 L1,0 C0.44771525,1.01453063e-16 -6.76353751e-17,0.44771525 0,1 Z M23.3333333,17 L1.66666667,17 L1.66666667,1.66666667 L23.3333333,1.66666667 L23.3333333,17 Z" id="Shape"></path>
+                <rect id="Rectangle-path" x="4" y="3.33333333" width="16.6666667" height="1.66666667"></rect>
+                <rect id="Rectangle-path" x="4" y="12.6000004" width="16.6666667" height="1.66666667"></rect>
+                <rect id="Rectangle-path" x="4" y="8" width="16.6666667" height="1.66666667"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,240 @@
+<!-- Filename: Bootstrap.html -->
+<!-- Creator: PT MAPID -->
+<!-- Project: Geomapid -->
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../../../favicon.ico">
+
+    <title>Geomapid Bootstrap Template</title>
+
+    <!-- Style Declarations start here -->
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+        crossorigin="anonymous">
+
+    <!-- Mapbox core CSS -->
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.44.1/mapbox-gl.css' rel='stylesheet' />
+
+    <!-- Custom CSS styles for this Page -->
+    <link href="bootstrap.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- HTML ELEMENTS -->
+    <!-- Map UI - DO NOT MODIFY -->
+    <div id='map'></div>
+
+    <!-- Top Navbar Use Grid System -->
+    <div class="topnavbar position-relative container-fluid w-100">
+        <div class="row">
+            <div class="height-100 col-sm-4">
+                <!-- Toggle Layer Card On/Off -->
+                <div id="current-layer">
+                    <label>Layer Name</label>
+                    <button id="layer-toggle-button" type="button" class="btn btn-light" data-toggle="collapse" data-target="#layer-card" aria-expanded="false"
+                        aria-controls="layer-card">Layer</button>
+                </div>
+            </div>
+            <div class="height-100 col-sm-4">
+                <!-- Style Toggle -->
+                <div id="style-toggle" class="btn-group" role="group" aria-label="Basic example">
+                    <button type="button" class="style-button btn">Streets</button>
+                    <button type="button" class="style-button btn">Satellite</button>
+                    <button type="button" class="style-button btn">Hybrid</button>
+                    <button type="button" class="style-button btn">Terrain</button>
+                </div>
+            </div>
+            <div class="height-100 col-sm-4">
+                <!-- Search Bar -->
+                <form class="form-inline">
+                    <div id="search-bar" class="input-group mb-3">
+                        <input id="search-text-input" type="text" class="form-control" placeholder="Search" aria-label="Enter Area Name" aria-describedby="basic-addon2">
+                        <div class="input-group-append">
+                            <button class="btn btn-outline-secondary" type="submit">Search</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Left Cards -->
+    <div class="cards position-relative">
+        <!-- Layer Card Row -->
+        <div class="row">
+            <!-- Layer Card -->
+            <div class="height-300 col">
+                <div id="layer-card" class="card collapse" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Layer List</h5>
+                        <p class="card-text">Enter Layer elements here</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Export Card Row -->
+        <div class="row">
+            <!-- Export Card -->
+            <div class="height-500 col">
+                <div id="export-card" class="card collapse">
+                    <div class="row">
+                        <!-- Export buttons: Layer, Maps, Share -->
+                        <div class="export-button-column-width col-md-auto">
+                            <button id="layer-export-button" type="button" class="export-button btn btn-light"></button>
+                        </div>
+                        <div class="export-button-column-width col-md-auto">
+                            <button id="maps-export-button" type="button" class="export-button btn btn-light"></button>
+                        </div>
+                        <div class="export-button-column-width col-md-auto">
+                            <button id="share-export-button" type="button" class="export-button btn btn-light"></button>
+                        </div>
+                    </div>
+                    <!-- We have to hide/show-->
+                    <!-- Content of Layer Export -->
+                    <!--<div class="layer-body card-body">
+                            <label for="state">Select Map Scale</label>
+                            <select class="custom-select d-block w-100" id="state" required>
+                                <option value="">1:1000</option>
+                                <option>1:1000000</option>
+                            </select>
+                            <label for="state">Select Paper Size</label>
+                            <select class="custom-select d-block w-100" id="state" required>
+                                <option value="">A3</option>
+                                <option>A4</option>
+                            </select>
+                            <label for="state">Select Paper Orientation</label>
+                            <select class="custom-select d-block w-100" id="state" required>
+                                <option value="">Landscape</option>
+                                <option>Portrait</option>
+                            </select>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                <label class="form-check-label" for="defaultCheck1">
+                                    Legends
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                <label class="form-check-label" for="defaultCheck2">
+                                    Scalebar
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                <label class="form-check-label" for="defaultCheck3">
+                                    Default checkbox
+                                </label>
+                            </div>
+                            <label for="state">Move Paper Area And</label>
+                            <div>
+                            <button id="print-submit" type="button" class="btn btn-light">Export</button>
+                            </div>
+                        </div>-->
+                    <!-- Content of Maps Export -->
+                    <div class="maps-body card-body">
+                        <div>
+                            <label for="state">Choose your layer</label>
+                        </div>
+                        <div>
+                            <button id="print-submit" type="button" class="btn btn-light">Select Layer</button>
+                        </div>
+                        <div>
+                            <label for="state">Choose format data</label>
+                        </div>
+                        <div class="row">
+                            <!-- Map Export CSV, SHP, KML -->
+                            <div class="format-data-button col-md-auto">
+                                <button id="csv-button" type="button" class="export-button btn btn-light"></button>
+                            </div>
+                            <div class="format-data-button col-md-auto">
+                                <button id="shp-button" type="button" class="export-button btn btn-light"></button>
+                            </div>
+                            <div class="format-data-button col-md-auto">
+                                <button id="kml-button" type="button" class="export-button btn btn-light"></button>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <!-- Maps Export GPX, CAD -->
+                            <div class="format-data-button col-md-auto">
+                                <button id="gpx-button" type="button" class="export-button btn btn-light"></button>
+                            </div>
+                            <div class="format-data-button col-md-auto">
+                                <button id="cad-button" type="button" class="export-button btn btn-light"></button>
+                            </div>
+                            <div class="export-button-column-width col-md-auto">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Content of Share Export -->
+                    <div class="share-body card-body">
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Sticky Footer Navbar -->
+    <footer class="navbar-img footer">
+        <div class="container">
+            <!-- MAPID Logo -->
+            <img id="mapid-logo" src="assets/mapid-logo.svg">
+            <!-- Footer buttons group -->
+            <div class="btn-group" role="group" aria-label="Basic example">
+                <button type="button" class="transparent btn btn-light">
+                    <img src="assets/inspect-button-icon.svg">
+                </button>
+                <button type="button" class="transparent btn btn-light" data-toggle="collapse" data-target="#export-card" aria-expanded="false"
+                    aria-controls="export-card">
+                    <img src="assets/export-button-icon.svg">
+                </button>
+                <button type="button" class="transparent btn btn-light">
+                    <img src="assets/detail-button-icon.svg">
+                </button>
+                <button type="button" class="transparent btn btn-light">
+                    <img src="assets/analyst-button-icon.svg">
+                </button>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts declaration start here -->
+    <!-- Mapbox Core Script -->
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.44.1/mapbox-gl.js'></script>
+
+    <!-- Bootstrap Scripts -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" crossorigin="anonymous"></script>
+
+    <!-- Custom Scripts -->
+    <script>
+        /* Display Map */
+        mapboxgl.accessToken =
+            'pk.eyJ1IjoieWFjb2I4OSIsImEiOiJjamU3dTYxOXEwMzIwMnFteHB5MGYzbzZmIn0._u0BoH4XBwpB7EaYN8Xb2g';
+
+        var map = new mapboxgl.Map({
+            container: 'map',
+            style: 'mapbox://styles/mapbox/streets-v9',
+            center: [-77.04, 38.907],
+            zoom: 11.15
+        });
+
+        // Add zoom and rotation controls to the map.
+        map.addControl(new mapboxgl.NavigationControl());
+    </script>
+</body>
+
+</html>

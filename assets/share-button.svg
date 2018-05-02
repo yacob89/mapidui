@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60px" height="70px" viewBox="0 0 60 70" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>share</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="60" height="70"></rect>
+        <filter x="-3.3%" y="-2.9%" width="106.7%" height="105.7%" filterUnits="objectBoundingBox" id="filter-2">
+            <feGaussianBlur stdDeviation="1.5" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="1" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+        <path d="M24.375,0 L5.625,0 C2.51839828,-1.90224492e-16 3.80448985e-16,2.51839828 0,5.625 L0,24.375 C3.80448985e-16,27.4816017 2.51839828,30 5.625,30 L24.375,30 C27.4816017,30 30,27.4816017 30,24.375 L30,5.625 C30,2.51839828 27.4816017,1.90224492e-16 24.375,0 Z M18.114375,18.399375 C19.1408894,17.6254069 20.5649874,17.6593429 21.5534705,18.4813281 C22.5419536,19.3033132 22.8350553,20.6973355 22.2612903,21.8477929 C21.6875253,22.9982502 20.397675,23.6028104 19.1463936,23.3077629 C17.8951121,23.0127153 17.0112275,21.8955963 17.011875,20.61 L17.011875,20.608125 L9.945,17.191875 C9.49836945,17.4816702 8.97740968,17.6360046 8.445,17.63625 C6.94255224,17.597166 5.74490253,16.367956 5.74490253,14.865 C5.74490253,13.362044 6.94255224,12.132834 8.445,12.09375 C9.0975,12.09375 9.695625,12.320625 10.17,12.6975 L17.01,9.39375 L17.01,9.391875 C17.0093525,8.10627868 17.8932371,6.98915969 19.1445186,6.69411212 C20.3958,6.39906456 21.6856503,7.00362482 22.2594153,8.15408215 C22.8331803,9.30453948 22.5400786,10.6985618 21.5515955,11.5205469 C20.5631124,12.3425321 19.1390144,12.3764681 18.1125,11.6025 L11.2125,14.93625 C11.2125,14.9775 11.20875,15.020625 11.206875,15.061875 L18.114375,18.399375 Z" id="path-3"></path>
+        <filter x="-6.7%" y="-6.7%" width="113.3%" height="113.3%" filterUnits="objectBoundingBox" id="filter-4">
+            <feGaussianBlur stdDeviation="1.5" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="1" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="share" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Rectangle-2">
+            <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+            <rect stroke="#979797" stroke-width="1" x="0.5" y="0.5" width="59" height="69"></rect>
+        </g>
+        <g id="Share-" transform="translate(15.000000, 12.000000)" fill-rule="nonzero">
+            <g id="Shape">
+                <use fill="#4A4A4A" fill-rule="evenodd" xlink:href="#path-3"></use>
+                <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+            </g>
+        </g>
+        <text font-family="Monaco" font-size="14" font-weight="normal" fill="#4A4A4A">
+            <tspan x="9.49658203" y="60">share</tspan>
+        </text>
+    </g>
+</svg>

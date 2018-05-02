@@ -1,0 +1,196 @@
+/* Geomapid Bootstrap CSS
+-------------------------------------------------- */
+
+html {
+    position: relative;
+    min-height: 100%;
+    font-size: 1rem;
+}
+
+body {
+    margin-bottom: 60px;
+    /* Margin bottom by footer height */
+}
+
+/* Sticky Footer */
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Custom page CSS
+-------------------------------------------------- */
+
+.container {
+    width: 400px;
+    padding: 0 15px;
+}
+
+.topnavbar{
+    top: 20px;
+}
+
+/* MAP CSS Properties */
+
+#map {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.height-100{
+    height: 100px;
+}
+
+.height-300{
+    height: 300px;
+}
+
+.height-500{
+    height: 500px;
+}
+
+/* Style Toggle Buttons */
+#style-toggle{
+    position: absolute;
+    top: 1%;
+    right: 0;
+}
+
+.style-button{
+    background: #d8d8d8;
+}
+
+/* Top right Search Bar & Button */
+
+#search-bar {
+    position: absolute;
+    top: 1%;
+    right: 10%;
+}
+
+#search-text-input{
+    background-image: url('assets/search-bar.svg');
+    background-color: transparent;
+    padding-left:30px;
+}
+
+/* Layer Cards On/Off Button */
+
+#layer-toggle-button {
+    top: 1%;
+    left: 20%;
+}
+
+#current-layer{
+    position: absolute;
+    top: 1%;
+    left: 15%;
+}
+
+/* Left Layer Panel Cards */
+
+.cards{
+    width: 200px;
+}
+
+#layer-card {
+    top: 0%;
+    left: 5%;
+    height: 100%;
+}
+
+#export-card-row{
+    width: 200px;
+}
+
+.export-button-column-width{
+    width: 60px;
+    height: 70px;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+#export-card {
+    top: 5%;
+    left: 5%;
+    height: 100%;
+    width: 200px;
+}
+
+.export-button{
+    height: 70px;
+    width: 60px;
+}
+
+#layer-export-button{
+    background-image: url('assets/layer-button.svg');
+}
+
+#maps-export-button{
+    background-image: url('assets/maps-button.svg');
+}
+
+#share-export-button{
+    background-image: url('assets/share-button.svg');
+}
+
+#print-submit{
+    position: absolute;
+    left: 30%;
+}
+
+.format-data-button{
+    width: 30px;
+    height: 30px;
+}
+
+#csv-button{
+    background-image: url('assets/csv-button.svg');
+}
+
+#shp-button{
+    background-image: url('assets/shp-button.svg');
+}
+
+#kml-button{
+    background-image: url('assets/kml-button.svg');
+}
+
+#gpx-button{
+    background-image: url('assets/kml-button.svg');
+}
+
+#cad-button{
+    background-image: url('assets/cad-button.svg');
+}
+
+/* Footer background image */
+
+.navbar-img {
+    background-image: url('assets/navbar-img.svg');
+}
+
+/* Mapbox Logo Display None */
+
+a.mapboxgl-ctrl-logo {
+    display: none;
+}
+
+/* Transparent Footer Button Group with no border */
+
+.transparent {
+    background: none;
+    border: 0pt;
+}
+
+/* Mapid Logo */
+
+#mapid-logo {
+    position: absolute;
+    left: 2%;
+    bottom: 20%;
+}

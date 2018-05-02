@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8' />
+    <title></title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.44.1/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.44.1/mapbox-gl.css' rel='stylesheet' />
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Main CSS File -->
+    <link rel="stylesheet" href="index.css">
+
+    <!-- Hosted CSS and JS File -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+
+</head>
+
+<body>
+    <!-- Start HTML Codes Here -->
+
+    <!-- Map UI -->
+    <div id='map'></div>
+
+    <!-- UI Other than Map itself -->
+    <!-- Navigation Bar -->
+    <nav class="teal" role="navigation">
+        <div class="nav-wrapper container">
+            <a id="logo-container" href="#" class="brand-logo">Logo</a>
+            <ul class="right hide-on-med-and-down">
+                <li>
+                    <a href="#">Navbar Link</a>
+                </li>
+            </ul>
+
+            <ul id="nav-mobile" class="sidenav">
+                <li>
+                    <a href="#">Navbar Link</a>
+                </li>
+            </ul>
+            <a href="#" data-target="nav-mobile" class="sidenav-trigger">
+                <i class="material-icons">menu</i>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Search Bar Top Right-->
+    <form action="#">
+        <div id="search-bar" class="mdl-textfield mdl-js-textfield">
+            <input class="mdl-textfield__input" type="text" id="sample1">
+            <label class="mdl-textfield__label" for="sample1">Search</label>
+        </div>
+    </form>
+
+    <!-- Left Layer Panel Demo Card -->
+
+    <div class="demo-card-wide mdl-card mdl-shadow--2dp">
+        <div class="mdl-card__title">
+            <h2 class="mdl-card__title-text">Layers</h2>
+        </div>
+        <div class="mdl-card__supporting-text">
+            <ul class="demo-list-control mdl-list">
+                <li class="mdl-list__item">
+                    <span class="mdl-list__item-primary-content">
+                        <i class="material-icons">bookmark_border</i>
+                        Sungai Citarum
+                    </span>
+                    <span class="mdl-list__item-secondary-action">
+                        <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="list-checkbox-1">
+                            <input type="checkbox" id="list-checkbox-1" class="mdl-checkbox__input" checked />
+                        </label>
+                    </span>
+                </li>
+                <li class="mdl-list__item">
+                    <span class="mdl-list__item-primary-content">
+                        <i class="material-icons">bookmark_border</i>
+                        Sungai Musi
+                    </span>
+                    <span class="mdl-list__item-secondary-action">
+                        <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="list-checkbox-1">
+                            <input type="checkbox" id="list-checkbox-2" class="mdl-checkbox__input" checked />
+                        </label>
+                    </span>
+                </li>
+                <li class="mdl-list__item">
+                    <span class="mdl-list__item-primary-content">
+                        <i class="material-icons">bookmark_border</i>
+                        Sungai Kapuas
+                    </span>
+                    <span class="mdl-list__item-secondary-action">
+                        <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="list-checkbox-1">
+                            <input type="checkbox" id="list-checkbox-3" class="mdl-checkbox__input" checked />
+                        </label>
+                    </span>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Bottom Buttons -->
+    <!-- Inspect Button -->
+    <button id="inspect-btn" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
+        <i class="material-icons">card_membership</i>
+        Inspect
+    </button>
+    <!-- Export Button -->
+    <button id="export-btn" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
+        <i class="material-icons">open_in_new</i>
+        Export
+    </button>
+    <!-- Details Button -->
+    <button id="details-btn" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
+        <i class="material-icons">chrome_reader_mode</i>
+        Details
+    </button>
+    <!-- Analyst Button -->
+    <button id="analyst-btn" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
+        <i class="material-icons">work</i>
+        Analyst
+    </button>
+
+    <!-- Footer -->
+    <footer class="page-footer teal footer-minus">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Footer Content</h5>
+                    <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Links</h5>
+                    <ul>
+                        <li>
+                            <a class="grey-text text-lighten-3" href="#!">Link 1</a>
+                        </li>
+                        <li>
+                            <a class="grey-text text-lighten-3" href="#!">Link 2</a>
+                        </li>
+                        <li>
+                            <a class="grey-text text-lighten-3" href="#!">Link 3</a>
+                        </li>
+                        <li>
+                            <a class="grey-text text-lighten-3" href="#!">Link 4</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2014 Copyright Text
+                <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Start Coding JS Here -->
+    <script>
+        mapboxgl.accessToken =
+            'pk.eyJ1IjoieWFjb2I4OSIsImEiOiJjamU3dTYxOXEwMzIwMnFteHB5MGYzbzZmIn0._u0BoH4XBwpB7EaYN8Xb2g';
+
+        var map = new mapboxgl.Map({
+            container: 'map',
+            style: 'mapbox://styles/mapbox/streets-v9',
+            center: [-77.04, 38.907],
+            zoom: 11.15
+        });
+
+        // Add zoom and rotation controls to the map.
+        map.addControl(new mapboxgl.NavigationControl());
+
+        map.on('load', function () {
+
+            // Add a layer showing the places.
+            map.addLayer({
+                "id": "places",
+                "type": "symbol",
+                "source": {
+                    "type": "geojson",
+                    "data": {
+                        "type": "FeatureCollection",
+                        "features": [{
+                            "type": "Feature",
+                            "properties": {
+                                "description": "<strong>Make it Mount Pleasant</strong><p><a href=\"http://www.mtpleasantdc.com/makeitmtpleasant\" target=\"_blank\" title=\"Opens in a new window\">Make it Mount Pleasant</a> is a handmade and vintage market and afternoon of live entertainment and kids activities. 12:00-6:00 p.m.</p>",
+                                "icon": "theatre"
+                            },
+                            "geometry": {
+                                "type": "Point",
+                                "coordinates": [-77.038659, 38.931567]
+                            }
+                        }, {
+                            "type": "Feature",
+                            "properties": {
+                                "description": "<strong>Mad Men Season Five Finale Watch Party</strong><p>Head to Lounge 201 (201 Massachusetts Avenue NE) Sunday for a <a href=\"http://madmens5finale.eventbrite.com/\" target=\"_blank\" title=\"Opens in a new window\">Mad Men Season Five Finale Watch Party</a>, complete with 60s costume contest, Mad Men trivia, and retro food and drink. 8:00-11:00 p.m. $10 general admission, $20 admission and two hour open bar.</p>",
+                                "icon": "theatre"
+                            },
+                            "geometry": {
+                                "type": "Point",
+                                "coordinates": [-77.003168, 38.894651]
+                            }
+                        }, {
+                            "type": "Feature",
+                            "properties": {
+                                "description": "<strong>Big Backyard Beach Bash and Wine Fest</strong><p>EatBar (2761 Washington Boulevard Arlington VA) is throwing a <a href=\"http://tallulaeatbar.ticketleap.com/2012beachblanket/\" target=\"_blank\" title=\"Opens in a new window\">Big Backyard Beach Bash and Wine Fest</a> on Saturday, serving up conch fritters, fish tacos and crab sliders, and Red Apron hot dogs. 12:00-3:00 p.m. $25.grill hot dogs.</p>",
+                                "icon": "bar"
+                            },
+                            "geometry": {
+                                "type": "Point",
+                                "coordinates": [-77.090372, 38.881189]
+                            }
+                        }, {
+                            "type": "Feature",
+                            "properties": {
+                                "description": "<strong>Ballston Arts & Crafts Market</strong><p>The <a href=\"http://ballstonarts-craftsmarket.blogspot.com/\" target=\"_blank\" title=\"Opens in a new window\">Ballston Arts & Crafts Market</a> sets up shop next to the Ballston metro this Saturday for the first of five dates this summer. Nearly 35 artists and crafters will be on hand selling their wares. 10:00-4:00 p.m.</p>",
+                                "icon": "art-gallery"
+                            },
+                            "geometry": {
+                                "type": "Point",
+                                "coordinates": [-77.111561, 38.882342]
+                            }
+                        }, {
+                            "type": "Feature",
+                            "properties": {
+                                "description": "<strong>Seersucker Bike Ride and Social</strong><p>Feeling dandy? Get fancy, grab your bike, and take part in this year's <a href=\"http://dandiesandquaintrelles.com/2012/04/the-seersucker-social-is-set-for-june-9th-save-the-date-and-start-planning-your-look/\" target=\"_blank\" title=\"Opens in a new window\">Seersucker Social</a> bike ride from Dandies and Quaintrelles. After the ride enjoy a lawn party at Hillwood with jazz, cocktails, paper hat-making, and more. 11:00-7:00 p.m.</p>",
+                                "icon": "bicycle"
+                            },
+                            "geometry": {
+                                "type": "Point",
+                                "coordinates": [-77.052477, 38.943951]
+                            }
+                        }, {
+                            "type": "Feature",
+                            "properties": {
+                                "description": "<strong>Capital Pride Parade</strong><p>The annual <a href=\"http://www.capitalpride.org/parade\" target=\"_blank\" title=\"Opens in a new window\">Capital Pride Parade</a> makes its way through Dupont this Saturday. 4:30 p.m. Free.</p>",
+                                "icon": "star"
+                            },
+                            "geometry": {
+                                "type": "Point",
+                                "coordinates": [-77.043444, 38.909664]
+                            }
+                        }, {
+                            "type": "Feature",
+                            "properties": {
+                                "description": "<strong>Muhsinah</strong><p>Jazz-influenced hip hop artist <a href=\"http://www.muhsinah.com\" target=\"_blank\" title=\"Opens in a new window\">Muhsinah</a> plays the <a href=\"http://www.blackcatdc.com\">Black Cat</a> (1811 14th Street NW) tonight with <a href=\"http://www.exitclov.com\" target=\"_blank\" title=\"Opens in a new window\">Exit Clov</a> and <a href=\"http://godsilla.bandcamp.com\" target=\"_blank\" title=\"Opens in a new window\">Gods’illa</a>. 9:00 p.m. $12.</p>",
+                                "icon": "music"
+                            },
+                            "geometry": {
+                                "type": "Point",
+                                "coordinates": [-77.031706, 38.914581]
+                            }
+                        }, {
+                            "type": "Feature",
+                            "properties": {
+                                "description": "<strong>A Little Night Music</strong><p>The Arlington Players' production of Stephen Sondheim's  <a href=\"http://www.thearlingtonplayers.org/drupal-6.20/node/4661/show\" target=\"_blank\" title=\"Opens in a new window\"><em>A Little Night Music</em></a> comes to the Kogod Cradle at The Mead Center for American Theater (1101 6th Street SW) this weekend and next. 8:00 p.m.</p>",
+                                "icon": "music"
+                            },
+                            "geometry": {
+                                "type": "Point",
+                                "coordinates": [-77.020945, 38.878241]
+                            }
+                        }, {
+                            "type": "Feature",
+                            "properties": {
+                                "description": "<strong>Truckeroo</strong><p><a href=\"http://www.truckeroodc.com/www/\" target=\"_blank\">Truckeroo</a> brings dozens of food trucks, live music, and games to half and M Street SE (across from Navy Yard Metro Station) today from 11:00 a.m. to 11:00 p.m.</p>",
+                                "icon": "music"
+                            },
+                            "geometry": {
+                                "type": "Point",
+                                "coordinates": [-77.007481, 38.876516]
+                            }
+                        }]
+                    }
+                },
+                "layout": {
+                    "icon-image": "{icon}-15",
+                    "icon-allow-overlap": true
+                }
+            });
+
+            // Create a popup, but don't add it to the map yet.
+            var popup = new mapboxgl.Popup({
+                closeButton: false,
+                closeOnClick: false
+            });
+
+            map.on('mouseenter', 'places', function (e) {
+                // Change the cursor style as a UI indicator.
+                map.getCanvas().style.cursor = 'pointer';
+
+                var coordinates = e.features[0].geometry.coordinates.slice();
+                var description = e.features[0].properties.description;
+
+                // Ensure that if the map is zoomed out such that multiple
+                // copies of the feature are visible, the popup appears
+                // over the copy being pointed to.
+                while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
+                    coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
+                }
+
+                // Populate the popup and set its coordinates
+                // based on the feature found.
+                popup.setLngLat(coordinates)
+                    .setHTML(description)
+                    .addTo(map);
+            });
+
+            map.on('mouseleave', 'places', function () {
+                map.getCanvas().style.cursor = '';
+                popup.remove();
+            });
+        });
+        // code from the next step will go here!
+    </script>
+</body>
+
+</html>

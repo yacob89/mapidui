@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>Export Autocad</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M14.1521429,0.00533333333 L2.07,20.9246667 L10.9235714,17.3826667 L14.1521429,0.00533333333 Z M15.8485714,0.00533333333 L18.5214286,14.344 L23.0664286,12.524 L15.8485714,0.00533333333 Z M15,3.22933333 L12.4885714,16.7553333 L17.1735714,14.8826667 L15,3.22933333 Z M23.7471429,13.7 L18.7721429,15.6893333 L20.3214286,24 L29.7107143,24 L23.7471429,13.7 Z M17.4221429,16.2313333 L12.1985714,18.322 L11.1414286,24 L18.8728571,24 L17.4221429,16.2313333 Z M10.6307143,18.9473333 L4.35857143,21.4573333 L4.58714286,23.9993333 L9.69,23.9993333 L10.6307143,18.9473333 Z M2.97428571,22.0106667 L0.976428571,22.81 L0.290714286,24 L3.15285714,24 L2.97428571,22.0106667 Z M0.379285714,25.3333333 L3.59357143,28.932 L3.27,25.3333333 L0.379285714,25.3333333 Z M4.70714286,25.3333333 L5.07285714,29.4453333 L8.59428571,29.914 L9.44357143,25.3333333 L4.70714286,25.3333333 Z M20.5692857,25.3333333 L21.42,29.914 L25.1228571,29.4193333 L24.3942857,25.3333333 L20.5692857,25.3333333 Z M25.8428571,25.3333333 L26.4735714,28.8566667 L29.62,25.3333333 L25.8428571,25.3333333 Z" id="path-1"></path>
+        <filter x="-6.8%" y="-6.7%" width="113.6%" height="113.4%" filterUnits="objectBoundingBox" id="filter-2">
+            <feGaussianBlur stdDeviation="1.5" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="1" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Export-Autocad" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Autocad" fill-rule="nonzero">
+            <g id="surface1">
+                <use fill="#4A4A4A" fill-rule="evenodd" xlink:href="#path-1"></use>
+                <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+            </g>
+        </g>
+    </g>
+</svg>
